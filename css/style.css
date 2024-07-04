@@ -149,3 +149,18 @@ ol {
 .dia20 {
   background-color: darkslategray;
 }
+
+/* Xmen 97 - Grid */
+
+.contenedor-xmen {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+
+  gap: 5px;
+}
+
+.poster img {
+  width: 100%;
+  border-radius: 12px;
+  height: auto;
+}
