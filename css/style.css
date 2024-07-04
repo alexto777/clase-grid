@@ -103,3 +103,49 @@ aside {
   border: black 5px solid;
   grid-area: area4;
 }
+
+/* Calendario */
+
+h1 {
+  margin-bottom: 30px;
+  text-align: center;
+  color: darkslategray;
+}
+
+ol {
+  display: grid;
+  place-items: center;
+  grid-template-columns: repeat(7, 1fr);
+  list-style: none;
+  padding: 5px 0;
+  background-color: #171717;
+  color: #f2f2f2;
+}
+
+.calendario {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  grid-auto-rows: 50pxs;
+
+  background-color: #f2f2f2;
+  gap: 5px;
+}
+
+[class^="dia"] {
+  display: grid;
+  place-items: start end;
+  color: #f2f2f2;
+  background-color: #171717;
+  padding: 4px;
+  font-size: 18px;
+  font-weight: 500;
+}
+
+.dia1 {
+  grid-column: 2/3;
+  background-color: darkslategray;
+}
+
+.dia20 {
+  background-color: darkslategray;
+}
